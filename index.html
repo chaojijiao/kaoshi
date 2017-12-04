@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="app/content/css/sryle.scss">
+</head>
+<body ng-app="app">
+    <div class="wrap" ng-controller="indexController">
+        <header>
+          公司
+        </header>
+        <div class="nav">
+            <p>融资</p>
+            <p>规模</p>
+            <p>行业</p>
+        </div>
+        <div class="content">
+            <dl>
+                <dt ng-repeat="info in info">
+                    <img src="{{info.img}}" alt="" style="width:100px">
+                </dt>
+                <dd ng-repeat="info in info" style="margin-left:5px;">
+                    <h1 style="font-size:20px;margin-top:10px;">{{info.title}}</h1>
+                    <h2 style="font-size:13px;color:#ccc;margin-top:10px;">{{info.add}}</h2>
+                    <p style="font-size:13px;color:#ccc;margin-top:10px;">{{info.list}}</p>
+                    <h3 style="margin-top:10px; font-size:14px;color:#ccc">{{info.zhaopin}}</h3>
+                </dd>
+            </dl>
+            <dl>
+                <dt ng-repeat="info in info">
+                    <img src="{{info.img}}" alt="" style="width:100px">
+                </dt>
+                <dd ng-repeat="info in info" style="margin-left:5px;">
+                    <h1 style="font-size:20px;margin-top:10px;">{{info.title}}</h1>
+                    <h2 style="font-size:13px;color:#ccc;margin-top:10px;">{{info.add}}</h2>
+                    <p style="font-size:13px;color:#ccc;margin-top:10px;">{{info.list}}</p>
+                    <h3 style="margin-top:10px; font-size:14px;color:#ccc">{{info.zhaopin}}</h3>
+                </dd>
+            </dl>
+            <dl>
+                <dt ng-repeat="info in info">
+                    <img src="{{info.img}}" alt="" style="width:100px">
+                </dt>
+                <dd ng-repeat="info in info" style="margin-left:5px;">
+                    <h1 style="font-size:20px;margin-top:10px;">{{info.title}}</h1>
+                    <h2 style="font-size:13px;color:#ccc;margin-top:10px;">{{info.add}}</h2>
+                    <p style="font-size:13px;color:#ccc;margin-top:10px;">{{info.list}}</p>
+                    <h3 style="margin-top:10px; font-size:14px;color:#ccc">{{info.zhaopin}}</h3>
+                </dd>
+            </dl>
+            
+        </div>
+    </div>
+    <script src="app/script/angular.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/controller/indexController.js"></script>
+</body>
+</html>
